@@ -1,11 +1,14 @@
 import React from 'react';
+import Bookmark from '../assets/images/logo-bookmark.svg';
 
 function Header() {
 	return (
 		<header>
 			<div className="navbar bg-base-100">
 				<div className="flex-1">
-					<a className="btn btn-ghost normal-case text-xl">Bookmark</a>
+					<a className="btn btn-accent normal-case text-xl">
+						<img src={Bookmark} alt="Bookmark Logo" />
+					</a>
 				</div>
 				<div className="flex-none">
 					<button className="btn btn-square btn-ghost">
