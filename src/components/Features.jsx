@@ -16,22 +16,28 @@ function Features() {
 							you can access them on the go.
 						</p>
 					</div>
-					<div>
+					<div className="flex flex-col justify-center items-center">
 						<ul>
-							<li>
-								<button>Simple Bookmarking</button>
+							<li className="border-t-2 h-14 w-[320px] flex items-center justify-center">
+								<button className="border-b-4 h-full border-red-400">
+									Simple Bookmarking
+								</button>
 							</li>
-							<li>
+							<li className="border-y-2 h-14 w-[320px] flex items-center justify-center">
 								<button>Speedy Searching</button>
 							</li>
-							<li>
+							<li className="border-b-2 h-14 w-[320px] flex items-center justify-center">
 								<button>Easy Sharing</button>
 							</li>
 						</ul>
-						<div>
-							<img src={FeatureTab1} alt="Simple Bookmarking" />
-							<h2>Bookmark in one click</h2>
-							<p>
+						<div className="my-5 flex flex-col items-center justify-between">
+							<img
+								src={FeatureTab1}
+								alt="Simple Bookmarking"
+								className="my-5"
+							/>
+							<h2 className="text-lg font-bold">Bookmark in one click</h2>
+							<p className="sm:w-1/2 my-5 ">
 								Organize your bookmarks however you like. Our simple
 								drag-and-drop interface gives you complete control over how you
 								manage your favourite sites.

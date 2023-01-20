@@ -5,9 +5,9 @@ import tw from '../assets/images/icon-twitter.svg';
 
 function Footer() {
 	return (
-		<footer className="min-h-[50vh] flex flex-col items-center">
+		<footer className="min-h-[50vh] flex flex-col items-center justify-around py-8 bg-zinc-400 text-black">
 			<img src={Bookmark} alt="Bookmark Logo" />
-			<ul>
+			<ul className="flex flex-col justify-evenly flex-1 items-center text-lg">
 				<li>
 					<a href="#">FEATURES</a>
 				</li>
@@ -18,7 +18,7 @@ function Footer() {
 					<a href="#">CONTACT</a>
 				</li>
 			</ul>
-			<ul>
+			<ul className="flex w-[100px] justify-between items-center">
 				<li>
 					<img src={fb} alt="Facebook" />
 				</li>
