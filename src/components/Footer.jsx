@@ -1,5 +1,5 @@
 import React from 'react';
-import Bookmark from '../assets/images/logo-Bookmark.svg';
+import Bookmark from '../assets/logo-Bookmark.svg';
 import fb from '../assets/icon-facebook.svg';
 import tw from '../assets/icon-twitter.svg';
 
