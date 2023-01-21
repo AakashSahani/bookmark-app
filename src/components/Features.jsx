@@ -1,7 +1,7 @@
 import React from 'react';
-import FeatureTab1 from '../assets/images/illustration-features-tab-1.svg';
-import FeatureTab2 from '../assets/images/illustration-features-tab-2.svg';
-import FeatureTab3 from '../assets/images/illustration-features-tab-3.svg';
+import FeatureTab1 from '../assets/illustration-features-tab-1.svg';
+import FeatureTab2 from '../assets/illustration-features-tab-2.svg';
+import FeatureTab3 from '../assets/illustration-features-tab-3.svg';
 
 function Features() {
 	return (
@@ -33,6 +33,32 @@ function Features() {
 						<div className="my-5 flex flex-col items-center justify-between">
 							<img
 								src={FeatureTab1}
+								alt="Simple Bookmarking"
+								className="my-5"
+							/>
+							<h2 className="text-lg font-bold">Bookmark in one click</h2>
+							<p className="sm:w-1/2 my-5 ">
+								Organize your bookmarks however you like. Our simple
+								drag-and-drop interface gives you complete control over how you
+								manage your favourite sites.
+							</p>
+						</div>
+						<div className="my-5 flex flex-col items-center justify-between">
+							<img
+								src={FeatureTab2}
+								alt="Simple Bookmarking"
+								className="my-5"
+							/>
+							<h2 className="text-lg font-bold">Bookmark in one click</h2>
+							<p className="sm:w-1/2 my-5 ">
+								Organize your bookmarks however you like. Our simple
+								drag-and-drop interface gives you complete control over how you
+								manage your favourite sites.
+							</p>
+						</div>
+						<div className="my-5 flex flex-col items-center justify-between">
+							<img
+								src={FeatureTab3}
 								alt="Simple Bookmarking"
 								className="my-5"
 							/>

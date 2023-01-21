@@ -1,5 +1,5 @@
 import React from 'react';
-import Bookmark from '../assets/images/logo-bookmark.svg';
+import Bookmark from '../assets/logo-bookmark.svg';
 
 function Header() {
 	return (

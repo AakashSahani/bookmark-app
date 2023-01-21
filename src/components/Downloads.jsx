@@ -1,7 +1,7 @@
 import React from 'react';
-import Chrome from '../assets/images/logo-chrome.svg';
-import Firefox from '../assets/images/logo-firefox.svg';
-import Opera from '../assets/images/logo-opera.svg';
+import Chrome from '../assets/logo-chrome.svg';
+import Firefox from '../assets/logo-firefox.svg';
+import Opera from '../assets/logo-opera.svg';
 
 function Downloads() {
 	return (

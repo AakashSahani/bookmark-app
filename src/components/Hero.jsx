@@ -1,6 +1,5 @@
 import React from 'react';
-// import HeroIllustration from '../assets/images/illustration-hero.svg';
-import heroImg from '../assets/images/illustration-hero.svg';
+import heroImg from '../assets/illustration-hero.svg';
 
 function Hero() {
 	return (
