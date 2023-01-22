@@ -16,58 +16,64 @@ function Features() {
 							you can access them on the go.
 						</p>
 					</div>
-					<div className="flex flex-col justify-center items-center">
-						<ul>
-							<li className="border-t-2 h-14 w-[320px] flex items-center justify-center">
+					<div className="flex flex-col  justify-center items-center">
+						<ul className="flex flex-col sm:flex-row">
+							<li className="border-t-2 sm:border-b-2 sm:border-t-0 h-14 w-[320px] flex items-center justify-center">
 								<button className="border-b-4 h-full border-red-400">
 									Simple Bookmarking
 								</button>
 							</li>
-							<li className="border-y-2 h-14 w-[320px] flex items-center justify-center">
+							<li className="border-y-2 sm:border-b-2 sm:border-y-0 h-14 w-[320px] flex items-center justify-center">
 								<button>Speedy Searching</button>
 							</li>
-							<li className="border-b-2 h-14 w-[320px] flex items-center justify-center">
+							<li className="border-b-2  h-14 w-[320px] flex items-center justify-center">
 								<button>Easy Sharing</button>
 							</li>
 						</ul>
-						<div className="my-5 flex flex-col items-center justify-between">
+						<div className="my-5 flex flex-col sm:flex-row items-center justify-between">
 							<img
 								src={FeatureTab1}
 								alt="Simple Bookmarking"
-								className="my-5"
+								className="my-5 mx-auto"
 							/>
-							<h2 className="text-lg font-bold">Bookmark in one click</h2>
-							<p className="sm:w-1/2 my-5 ">
-								Organize your bookmarks however you like. Our simple
-								drag-and-drop interface gives you complete control over how you
-								manage your favourite sites.
-							</p>
+							<div className="px-0 sm:px-10">
+								<h2 className="text-lg font-bold">Bookmark in one click</h2>
+								<p className="my-5">
+									Organize your bookmarks however you like. Our simple
+									drag-and-drop interface gives you complete control over how
+									you manage your favourite sites.
+								</p>
+							</div>
 						</div>
-						<div className="my-5 flex flex-col items-center justify-between">
+						<div className="hidden my-5 flex-col sm:flex-row items-center justify-between">
 							<img
-								src={FeatureTab2}
+								src={FeatureTab1}
 								alt="Simple Bookmarking"
-								className="my-5"
+								className="my-5 mx-auto"
 							/>
-							<h2 className="text-lg font-bold">Bookmark in one click</h2>
-							<p className="sm:w-1/2 my-5 ">
-								Organize your bookmarks however you like. Our simple
-								drag-and-drop interface gives you complete control over how you
-								manage your favourite sites.
-							</p>
+							<div className="px-0 sm:px-10">
+								<h2 className="text-lg font-bold">Bookmark in one click</h2>
+								<p className="my-5">
+									Organize your bookmarks however you like. Our simple
+									drag-and-drop interface gives you complete control over how
+									you manage your favourite sites.
+								</p>
+							</div>
 						</div>
-						<div className="my-5 flex flex-col items-center justify-between">
+						<div className="hidden my-5 flex-col sm:flex-row items-center justify-between">
 							<img
-								src={FeatureTab3}
+								src={FeatureTab1}
 								alt="Simple Bookmarking"
-								className="my-5"
+								className="my-5 mx-auto"
 							/>
-							<h2 className="text-lg font-bold">Bookmark in one click</h2>
-							<p className="sm:w-1/2 my-5 ">
-								Organize your bookmarks however you like. Our simple
-								drag-and-drop interface gives you complete control over how you
-								manage your favourite sites.
-							</p>
+							<div className="px-0 sm:px-10">
+								<h2 className="text-lg font-bold">Bookmark in one click</h2>
+								<p className="my-5">
+									Organize your bookmarks however you like. Our simple
+									drag-and-drop interface gives you complete control over how
+									you manage your favourite sites.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>

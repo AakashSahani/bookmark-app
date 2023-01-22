@@ -4,8 +4,8 @@ import heroImg from '../assets/illustration-hero.svg';
 function Hero() {
 	return (
 		<section>
-			<div className="hero min-h-screen bg-base-200">
-				<div className="hero-content text-center flex-col">
+			<div className="hero min-h-screen bg-white">
+				<div className="hero-content text-center flex-col sm:flex-row-reverse">
 					<img src={heroImg} className="" />
 					<div className="max-w-md">
 						<h1 className="text-5xl font-bold">A Simple Bookmark Manager</h1>
