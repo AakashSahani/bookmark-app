@@ -41,7 +41,7 @@ function FAQ() {
 						</button>
 					</li>
 				</ul>
-				<button className="btn bg-softBlue text-white my-5 hover:text-softBlue hover:bg-white">
+				<button className="w-fit px-4 h-12 shadow-xl rounded bg-softBlue text-white my-4">
 					More Info
 				</button>
 			</div>
@@ -61,7 +61,10 @@ function FAQ() {
 						placeholder="Enter your email address"
 						className="h-12 bg-white mx-4 px-4 w-72"
 					/>
-					<button className="btn bg-softRed border-0 text-white" type="submit">
+					<button
+						className="bg-softRed w-fit px-4 h-12 shadow-xl rounded text-white"
+						type="submit"
+					>
 						Contact Us
 					</button>
 				</form>
