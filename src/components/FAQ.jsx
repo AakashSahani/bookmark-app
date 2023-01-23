@@ -1,12 +1,7 @@
 import React from 'react';
-// import { useState } from 'react';
 import arrow from '../assets/icon-arrow.svg';
 
 function FAQ() {
-	// const [arrowCSS, setArrowCSS] = useState(false);
-	// const handleClick = () => {
-	// 	setArrowCSS((arrowCSS) => !arrowCSS);
-	// };
 	return (
 		<section>
 			<div className="flex flex-col justify-evenly min-h-[50vh] items-center w-[35%] mx-auto text-center">
@@ -47,10 +42,10 @@ function FAQ() {
 			</div>
 			<div className="min-h-[50vh] bg-softBlue text-white flex justify-evenly flex-col items-center">
 				<span className="text-lg">35,000+ ALREADY JOINED</span>
-				<h3 className="text-3xl font-bold">
+				<h3 className="text-2xl font-bold text-center px-10 sm:text-3xl sm:w-1/3">
 					Stay up-to-date with what we're doing
 				</h3>
-				<form className="">
+				<form className="flex flex-col sm:flex-row justify-center items-center w-full px-10">
 					<label htmlFor="email" hidden>
 						Email
 					</label>
@@ -59,10 +54,10 @@ function FAQ() {
 						name="email"
 						id="email"
 						placeholder="Enter your email address"
-						className="h-12 bg-white mx-4 px-4 w-72"
+						className="h-12 bg-white mx-4 px-4 w-full sm:w-72 mb-5 sm:mb-0"
 					/>
 					<button
-						className="bg-softRed w-fit px-4 h-12 shadow-xl rounded text-white"
+						className="bg-softRed w-full sm:w-fit px-4 h-12 shadow-xl rounded text-white border-softRed border-2 hover:bg-white hover:text-softRed"
 						type="submit"
 					>
 						Contact Us
