@@ -16,7 +16,11 @@ function Header() {
 		<header className="flex px-[10%] py-10">
 			<div className="flex-1 z-10">
 				<a className="normal-case text-xl z-10">
-					<img src={Bookmark} alt="Bookmark Logo" />
+					<img
+						src={Bookmark}
+						alt="Bookmark Logo"
+						className={menu ? '' : 'invert'}
+					/>
 				</a>
 			</div>
 			<div className="flex-1 hidden md:block">
@@ -50,27 +54,29 @@ function Header() {
 			</div>
 			<div
 				className={`${
-					menu ? 'hidden' : 'block'
-				} absolute w-screen h-screen top-0 left-0 bg-veryDarkBlue opacity-95`}
+					menu ? 'hidden' : 'flex'
+				} absolute flex-col items-center justify-around w-screen h-[80vh] top-0 left-0 bg-veryDarkBlue opacity-95`}
 			>
-				<ul className="flex flex-col w-full justify-center items-center">
-					<li>
+				<ul className="flex flex-col  w-full justify-center items-center px-10 text-center text-lg text-white">
+					<li className="flex items-center justify-center border-y w-full h-16">
 						<a href="#" className="">
 							FEATURES
 						</a>
 					</li>
-					<li>
+					<li className="flex items-center justify-center w-full h-16">
 						<a href="#" className="">
 							PRICING
 						</a>
 					</li>
-					<li>
+					<li className="flex items-center justify-center border-y w-full h-16">
 						<a href="#" className="">
 							CONTACT
 						</a>
 					</li>
-					<li>
-						<button className="">LOGIN</button>
+					<li className="flex items-center justify-center w-full h-16">
+						<button className="border-2 w-full text-white text-xl h-12 rounded-md mt-10">
+							LOGIN
+						</button>
 					</li>
 				</ul>
 				<ul className="flex w-24 sm:w-[100px] justify-between items-center">
