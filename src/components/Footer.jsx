@@ -6,7 +6,7 @@ import tw from '../assets/icon-twitter.svg';
 function Footer() {
 	return (
 		<footer className="min-h-[50vh] md:px-[10%] md:min-h-fit md:flex-row flex flex-col items-center justify-around py-8 bg-veryDarkBlue text-white">
-			<img src={Bookmark} alt="Bookmark Logo" />
+			<img src={Bookmark} alt="Bookmark Logo" className="invert" />
 			<ul className="md:flex-row flex flex-col flex-1 justify-evenly sm:justify-start items-center text-lg">
 				<li className="sm:mr-8">
 					<a href="#">FEATURES</a>

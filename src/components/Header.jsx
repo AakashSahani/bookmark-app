@@ -1,11 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Bookmark from '../assets/logo-bookmark.svg';
+import Hamburger from '../assets/icon-hamburger.svg';
+import Close from '../assets/icon-close.svg';
+import fb from '../assets/icon-facebook.svg';
+import tw from '../assets/icon-twitter.svg';
 
 function Header() {
+	const [menu, setMenu] = useState(false);
+	const handleClick = (e) => {
+		e.preventDefault();
+		setMenu((menu) => !menu);
+		console.log('Hamburger menu clicked');
+	};
 	return (
 		<header className="flex px-[10%] py-10">
-			<div className="flex-1">
-				<a className="normal-case text-xl">
+			<div className="flex-1 z-10">
+				<a className="normal-case text-xl z-10">
 					<img src={Bookmark} alt="Bookmark Logo" />
 				</a>
 			</div>
@@ -33,22 +43,44 @@ function Header() {
 					</li>
 				</ul>
 			</div>
-			<div className="flex-none md:hidden">
-				<button className="">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						className="inline-block w-5 h-5 stroke-current"
-					>
-						<path
-							strokeLinecap="round"
-							strokeLinejoin="round"
-							strokeWidth="2"
-							d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
-						></path>
-					</svg>
+			<div className="flex-none md:hidden z-10">
+				<button onClick={handleClick}>
+					<img src={menu ? Hamburger : Close} alt="Mobile Menu" />
 				</button>
+			</div>
+			<div
+				className={`${
+					menu ? 'hidden' : 'block'
+				} absolute w-screen h-screen top-0 left-0 bg-veryDarkBlue opacity-95`}
+			>
+				<ul className="flex flex-col w-full justify-center items-center">
+					<li>
+						<a href="#" className="">
+							FEATURES
+						</a>
+					</li>
+					<li>
+						<a href="#" className="">
+							PRICING
+						</a>
+					</li>
+					<li>
+						<a href="#" className="">
+							CONTACT
+						</a>
+					</li>
+					<li>
+						<button className="">LOGIN</button>
+					</li>
+				</ul>
+				<ul className="flex w-24 sm:w-[100px] justify-between items-center">
+					<li>
+						<img src={fb} alt="Facebook" />
+					</li>
+					<li>
+						<img src={tw} alt="Twitter" />
+					</li>
+				</ul>
 			</div>
 		</header>
 	);
