@@ -10,7 +10,6 @@ function Header() {
 	const handleClick = (e) => {
 		e.preventDefault();
 		setMenu((menu) => !menu);
-		console.log('Hamburger menu clicked');
 	};
 	return (
 		<header className="flex px-[10%] py-10">
@@ -19,7 +18,7 @@ function Header() {
 					<img
 						src={Bookmark}
 						alt="Bookmark Logo"
-						className={menu ? '' : 'invert'}
+						className={menu ? 'invert' : ''}
 					/>
 				</a>
 			</div>
@@ -49,13 +48,13 @@ function Header() {
 			</div>
 			<div className="flex-none md:hidden z-10">
 				<button onClick={handleClick}>
-					<img src={menu ? Hamburger : Close} alt="Mobile Menu" />
+					<img src={menu ? Close : Hamburger} alt="Mobile Menu" />
 				</button>
 			</div>
 			<div
 				className={`${
-					menu ? 'hidden' : 'flex'
-				} absolute flex-col items-center justify-around w-screen h-[80vh] top-0 left-0 bg-veryDarkBlue opacity-95`}
+					menu ? 'flex' : 'hidden'
+				} sm:hidden absolute flex-col items-center justify-around w-screen h-[80vh] top-0 left-0 bg-veryDarkBlue opacity-95`}
 			>
 				<ul className="flex flex-col  w-full justify-center items-center px-10 text-center text-lg text-white">
 					<li className="flex items-center justify-center border-y w-full h-16">
