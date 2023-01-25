@@ -14,7 +14,7 @@ function Downloads() {
 				</p>
 			</div>
 			<div className="flex flex-col sm:flex-row justify-center my-5">
-				<div className="flex text-lg my-5 mx-auto sm:mx-4 sm:my-0 w-[70vw]  sm:w-[250px] h-96 shadow-md rounded-lg flex-col justify-evenly  items-center">
+				<div className="flex text-lg my-5 mx-auto sm:mx-4 sm:my-0 w-[70vw]  sm:w-[275px] h-96 shadow-md rounded-lg flex-col justify-evenly  items-center">
 					<img src={Chrome} alt="Chrome" className="w-20" />
 					<div className="w-full border-dotted border-b-8 pb-5">
 						<h3 className="text-xl font-bold">Add to Chrome</h3>
@@ -26,7 +26,7 @@ function Downloads() {
 						Add & Install Extension
 					</button>
 				</div>
-				<div className="flex text-lg my-5 mx-auto sm:mx-4 sm:my-10 w-[70vw] sm:w-[250px] h-96 shadow-md rounded-lg flex-col justify-evenly  items-center">
+				<div className="flex text-lg my-5 mx-auto sm:mx-4 sm:my-10 w-[70vw] sm:w-[275px] h-96 shadow-md rounded-lg flex-col justify-evenly  items-center">
 					<img src={Firefox} alt="" className="w-20" />
 					<div className="w-full border-dotted border-b-8 pb-5">
 						<h3 className="text-xl font-bold">Add to Firefox</h3>
@@ -38,7 +38,7 @@ function Downloads() {
 						Add & Install Extension
 					</button>
 				</div>
-				<div className="flex text-lg my-5 mx-auto sm:mx-4 sm:my-20 w-[70vw] sm:w-[250px] h-96  shadow-md rounded-lg flex-col justify-evenly  items-center">
+				<div className="flex text-lg my-5 mx-auto sm:mx-4 sm:my-20 w-[70vw] sm:w-[275px] h-96  shadow-md rounded-lg flex-col justify-evenly  items-center">
 					<img src={Opera} alt="" className="w-20" />
 					<div className="w-full border-dotted border-b-8 pb-5">
 						<h3 className="text-xl font-bold">Add to Opera</h3>

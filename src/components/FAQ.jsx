@@ -4,7 +4,7 @@ import arrow from '../assets/icon-arrow.svg';
 function FAQ() {
 	return (
 		<section>
-			<div className="flex flex-col justify-evenly min-h-[50vh] items-center p-[10%] mx-auto text-center">
+			<div className="flex flex-col justify-evenly min-h-[50vh] sm:w-[55vw] items-center px-[10%] py-[5%] mx-auto text-center">
 				<h2 className="text-2xl px-10 font-bold my-5">
 					Frequently Asked Questions
 				</h2>

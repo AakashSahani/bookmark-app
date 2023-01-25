@@ -14,13 +14,11 @@ function Header() {
 	return (
 		<header className="flex px-[10%] py-10">
 			<div className="flex-1 z-10">
-				<a className="normal-case text-xl z-10">
-					<img
-						src={Bookmark}
-						alt="Bookmark Logo"
-						className={menu ? 'invert' : ''}
-					/>
-				</a>
+				<img
+					src={Bookmark}
+					alt="Bookmark Logo"
+					className={menu ? 'invert' : ''}
+				/>
 			</div>
 			<div className="flex-1 hidden md:block">
 				<ul className="flex w-full justify-around items-center">

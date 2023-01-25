@@ -3,11 +3,11 @@ import heroImg from '../assets/illustration-hero.svg';
 
 function Hero() {
 	return (
-		<section className="flex flex-col lg:flex-row-reverse items-center px-[10%] py-10 min-h-screen">
+		<section className="flex flex-col lg:flex-row-reverse items-center pl-[10%] pr-[10%] sm:pr-[5%] min-h-[80vh]">
 			<img
 				src={heroImg}
 				alt="Bookmark Manager"
-				className="w-full h-auto m-auto sm:flex-1"
+				className="w-full h-auto m-auto sm:flex-1 pt-10 sm:pt-0"
 			/>
 			<div className="flex flex-col justify-center flex-1 items-center text-center sm:text-left sm:items-start">
 				<h1 className="text-4xl font-bold">A Simple Bookmark Manager</h1>
