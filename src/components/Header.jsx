@@ -12,7 +12,7 @@ function Header() {
 		setMenu((menu) => !menu);
 	};
 	return (
-		<header className="flex px-[10%] py-10">
+		<header className="flex px-[10%] py-10" onScroll={handleClick}>
 			<div className="flex-1 z-10">
 				<img
 					src={Bookmark}
@@ -52,7 +52,7 @@ function Header() {
 			<div
 				className={`${
 					menu ? 'flex' : 'hidden'
-				} sm:hidden absolute flex-col items-center justify-around w-screen h-[80vh] top-0 left-0 bg-veryDarkBlue opacity-95`}
+				} sm:hidden absolute flex-col items-center justify-around w-screen h-screen top-0 left-0 bg-veryDarkBlue opacity-95`}
 			>
 				<ul className="flex flex-col  w-full justify-center items-center px-10 text-center text-lg text-white">
 					<li className="flex items-center justify-center border-y w-full h-16">
