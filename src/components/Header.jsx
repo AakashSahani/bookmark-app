@@ -11,9 +11,6 @@ function Header() {
 		e.preventDefault();
 		setMenu((menu) => !menu);
 	};
-	useEffect(() => {
-		console.log(window.scroll);
-	}, []);
 	return (
 		<header
 			className="flex px-[10%] py-10 justify-between"

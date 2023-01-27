@@ -2,11 +2,14 @@ import React, { useState } from 'react';
 import arrow from '../assets/icon-arrow.svg';
 
 function FAQ() {
-	// const [b]
-	const [hide, setHide] = useState(true);
+	const [hidebuttons, setHidebuttons] = useState([true, true, true, true]);
 	const handleClick = (e) => {
-		e.preventDefault();
-		setHide((hide) => !hide);
+		const newArr = hidebuttons.map(
+			(button, index) =>
+				(hidebuttons[index] =
+					index === parseInt(e.currentTarget.value) ? !button : button)
+		);
+		setHidebuttons(newArr);
 	};
 	return (
 		<section>
@@ -19,37 +22,61 @@ function FAQ() {
 					answered please feel free to email us.
 				</p>
 				<ul className="w-full my-5">
-					<li className="border-y-2 my-0 h-14 justify-between flex items-center text-left">
-						What is Bookmark?
-						<button className="mr-2">
-							<img src={arrow} alt="Arrow to expand answers" />
-						</button>
-					</li>
 					<li className="border-b-2 py-4 my-0 min-h-14 h-fit justify-between flex flex-col items-center text-left">
 						<div className="w-full justify-between flex">
-							How can I request a new browser?
-							<button className="mr-2" onClick={handleClick}>
+							What is Bookmark?
+							<button className="mr-2" value={0} onClick={handleClick}>
 								<img src={arrow} alt="Arrow to expand answers" />
 							</button>
 						</div>
-						<p className={hide ? 'hidden' : 'py-4 text-gray-400'}>
+						<p className={hidebuttons[0] ? 'hidden' : 'pt-4 text-gray-400'}>
 							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam
 							magni ratione cupiditate facere, pariatur accusantium sit ullam id
 							nam tempora unde aspernatur sed eos fugit quod nostrum rem odit
 							tempore.
 						</p>
 					</li>
-					<li className="border-b-2 my-0 h-14 justify-between flex items-center text-left">
-						Is there a mobile app?
-						<button className="mr-2">
-							<img src={arrow} alt="Arrow to expand answers" />
-						</button>
+					<li className="border-b-2 py-4 my-0 min-h-14 h-fit justify-between flex flex-col items-center text-left">
+						<div className="w-full justify-between flex">
+							How can I request a new browser?
+							<button className="mr-2" value={1} onClick={handleClick}>
+								<img src={arrow} alt="Arrow to expand answers" />
+							</button>
+						</div>
+						<p className={hidebuttons[1] ? 'hidden' : 'pt-4 text-gray-400'}>
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam
+							magni ratione cupiditate facere, pariatur accusantium sit ullam id
+							nam tempora unde aspernatur sed eos fugit quod nostrum rem odit
+							tempore.
+						</p>
 					</li>
-					<li className="border-b-2 my-0 h-14 justify-between flex items-center text-left">
-						What about other Chromium browsers?
-						<button className="mr-2">
-							<img src={arrow} alt="Arrow to expand answers" />
-						</button>
+					<li className="border-b-2 py-4 my-0 min-h-14 h-fit justify-between flex flex-col items-center text-left">
+						<div className="w-full justify-between flex">
+							Is there a mobile app?
+							<button className="mr-2" value={2} onClick={handleClick}>
+								<img src={arrow} alt="Arrow to expand answers" />
+							</button>
+						</div>
+						<p className={hidebuttons[2] ? 'hidden' : 'pt-4 text-gray-400'}>
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam
+							magni ratione cupiditate facere, pariatur accusantium sit ullam id
+							nam tempora unde aspernatur sed eos fugit quod nostrum rem odit
+							tempore.
+						</p>
+					</li>
+					<li className="border-b-2 py-4 my-0 min-h-14 h-fit justify-between flex flex-col items-center text-left">
+						<div className="w-full justify-between flex">
+							What about other Chromium browsers?
+							<button className="mr-2" value={3} onClick={handleClick}>
+								<img src={arrow} alt="Arrow to expand answers" />
+							</button>
+						</div>
+						<p className={hidebuttons[3] ? 'hidden' : 'pt-4 text-gray-400'}>
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam
+							magni ratione cupiditate facere, pariatur accusantium sit ullam id
+							nam tempora unde aspernatur sed eos fugit quod nostrum rem odit
+							tempore.
+						</p>
 					</li>
 				</ul>
 				<button className="w-fit px-4 h-12 shadow-xl rounded bg-softBlue text-white my-10">
