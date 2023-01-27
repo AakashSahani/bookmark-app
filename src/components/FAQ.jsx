@@ -11,6 +11,7 @@ function FAQ() {
 		);
 		setHidebuttons(newArr);
 	};
+
 	return (
 		<section>
 			<div className="flex flex-col justify-evenly min-h-[50vh] sm:w-[55vw] items-center px-[10%] py-[5%] mx-auto text-center">
@@ -26,7 +27,11 @@ function FAQ() {
 						<div className="w-full justify-between flex">
 							What is Bookmark?
 							<button className="mr-2" value={0} onClick={handleClick}>
-								<img src={arrow} alt="Arrow to expand answers" />
+								<img
+									src={arrow}
+									alt="Arrow to expand answers"
+									className={hidebuttons[0] ? 'rotate-0' : 'rotate-180'}
+								/>
 							</button>
 						</div>
 						<p className={hidebuttons[0] ? 'hidden' : 'pt-4 text-gray-400'}>
@@ -40,7 +45,11 @@ function FAQ() {
 						<div className="w-full justify-between flex">
 							How can I request a new browser?
 							<button className="mr-2" value={1} onClick={handleClick}>
-								<img src={arrow} alt="Arrow to expand answers" />
+								<img
+									src={arrow}
+									alt="Arrow to expand answers"
+									className={hidebuttons[1] ? 'rotate-0' : 'rotate-180'}
+								/>
 							</button>
 						</div>
 						<p className={hidebuttons[1] ? 'hidden' : 'pt-4 text-gray-400'}>
@@ -54,7 +63,11 @@ function FAQ() {
 						<div className="w-full justify-between flex">
 							Is there a mobile app?
 							<button className="mr-2" value={2} onClick={handleClick}>
-								<img src={arrow} alt="Arrow to expand answers" />
+								<img
+									src={arrow}
+									alt="Arrow to expand answers"
+									className={hidebuttons[2] ? 'rotate-0' : 'rotate-180'}
+								/>
 							</button>
 						</div>
 						<p className={hidebuttons[2] ? 'hidden' : 'pt-4 text-gray-400'}>
@@ -68,7 +81,11 @@ function FAQ() {
 						<div className="w-full justify-between flex">
 							What about other Chromium browsers?
 							<button className="mr-2" value={3} onClick={handleClick}>
-								<img src={arrow} alt="Arrow to expand answers" />
+								<img
+									src={arrow}
+									alt="Arrow to expand answers"
+									className={hidebuttons[3] ? 'rotate-0' : 'rotate-180'}
+								/>
 							</button>
 						</div>
 						<p className={hidebuttons[3] ? 'hidden' : 'pt-4 text-gray-400'}>
