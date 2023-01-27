@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import arrow from '../assets/icon-arrow.svg';
 
 function FAQ() {
+	// const [b]
+	const [hide, setHide] = useState(true);
+	const handleClick = (e) => {
+		e.preventDefault();
+		setHide((hide) => !hide);
+	};
 	return (
 		<section>
 			<div className="flex flex-col justify-evenly min-h-[50vh] sm:w-[55vw] items-center px-[10%] py-[5%] mx-auto text-center">
@@ -19,11 +25,19 @@ function FAQ() {
 							<img src={arrow} alt="Arrow to expand answers" />
 						</button>
 					</li>
-					<li className="border-b-2 my-0 h-14 justify-between flex items-center text-left">
-						How can I request a new browser?
-						<button className="mr-2">
-							<img src={arrow} alt="Arrow to expand answers" />
-						</button>
+					<li className="border-b-2 py-4 my-0 min-h-14 h-fit justify-between flex flex-col items-center text-left">
+						<div className="w-full justify-between flex">
+							How can I request a new browser?
+							<button className="mr-2" onClick={handleClick}>
+								<img src={arrow} alt="Arrow to expand answers" />
+							</button>
+						</div>
+						<p className={hide ? 'hidden' : 'py-4 text-gray-400'}>
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam
+							magni ratione cupiditate facere, pariatur accusantium sit ullam id
+							nam tempora unde aspernatur sed eos fugit quod nostrum rem odit
+							tempore.
+						</p>
 					</li>
 					<li className="border-b-2 my-0 h-14 justify-between flex items-center text-left">
 						Is there a mobile app?

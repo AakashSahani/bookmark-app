@@ -16,10 +16,10 @@ function Hero() {
 					a new browser tab and see your sites load instantly. Try it for free.
 				</p>
 				<div className="flex justify-evenly">
-					<button className="h-12 px-4 shadow-xl min-w-fit rounded bg-softBlue text-white">
+					<button className="h-12  border-2 border-softBlue px-4 shadow-xl min-w-fit rounded bg-softBlue text-white hover:bg-white hover:text-softBlue hover:border-2 hover:border-softBlue">
 						Get it on Chrome
 					</button>
-					<button className="h-12 shadow-xl px-4 min-w-fit ml-4 rounded bg-white">
+					<button className="h-12 border-2 border-white shadow-xl px-4 min-w-fit ml-4 rounded bg-white hover:text-softBlue hover:border-black">
 						Get it on Firefox
 					</button>
 				</div>
